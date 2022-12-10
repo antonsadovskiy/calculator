@@ -35,7 +35,6 @@
     padding-bottom: 15px;
     gap: 2px;
 }
-
 .number {
     background-color: rgb(70, 61, 61);
     color: white;
@@ -44,7 +43,6 @@
     background-color:rgb(36, 32, 32);
     transition: all 0.4s ease;
 }
-
 .operation{
     background-color: rgb(232, 152, 3);
     color: white;
@@ -53,7 +51,6 @@
     background-color: rgb(162, 106, 2);
     transition: all 0.4s ease;
 }
-
 .others {
     background-color: rgb(233, 183, 183);
 }
@@ -61,7 +58,6 @@
     background-color: rgb(164, 128, 128);
     transition: all 0.4s ease;
 }
-
 #zero {
     width: 174px;
     border-radius: 45px;
@@ -78,7 +74,6 @@ button {
     height: 87px;
     font-size: 30px;
 }
-
 .result {
     color: white;
     font-size: 70px;
