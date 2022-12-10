@@ -74,6 +74,12 @@ button {
     height: 87px;
     font-size: 30px;
 }
+#multiply {
+    font-size: 22px;
+}
+#plus, #minus{
+    font-size: 35px;
+}
 .result {
     color: white;
     font-size: 70px;
