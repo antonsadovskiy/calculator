@@ -80,7 +80,7 @@ input {
 #plus, #minus{
     font-size: 35px;
 }
-.result {
+#result {
     color: white;
     font-size: 70px;
     font-family :Arial, Helvetica, sans-serif;
