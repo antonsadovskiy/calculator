@@ -10,28 +10,26 @@
 <body>
     <div class="container">
         <div class="output">
-            <form class="result">
-                <output name="result">0</output>
-            </form>
+            <p id="result">0</p>
         </div>
         <div class="buttons-wrapper">
-            <input type="button" class="others" id="clearAll" value="C">
+            <input type="button" class="others" onclick="clearAll()" id="clearAll" value="C">
             <input type="button" class="others" value="+/-">
             <input type="button" class="others" value="%">
             <input type="button" class="operation" id="divide" value="/">
-            <input type="button" class="number" id="seven" value="7">
-            <input type="button" class="number" id="eight" value="8">
-            <input type="button" class="number" id="nine" value="9">
+            <input type="button" class="number" id="seven" onclick="typeSeven()" value="7">
+            <input type="button" class="number" id="eight" onclick="typeEight()" value="8">
+            <input type="button" class="number" id="nine" onclick="typeNine()" value="9">
             <input type="button" class="operation" id="multiply" value="X">
-            <input type="button" class="number" id="four" value="4">
-            <input type="button" class="number" id="five" value="5">
-            <input type="button" class="number" id="six" value="6">
+            <input type="button" class="number" id="four" onclick="typeFour()" value="4">
+            <input type="button" class="number" id="five" onclick="typeFive()" value="5">
+            <input type="button" class="number" id="six" onclick="typeSix()" value="6">
             <input type="button" class="operation" id="minus" value="-">
-            <input type="button" class="number" id="one" value="1">
-            <input type="button" class="number" id="two" value="2">
-            <input type="button" class="number" id="three" value="3">
+            <input type="button" class="number" id="one" onclick="typeOne()" value="1">
+            <input type="button" class="number" id="two" onclick="typeTwo()" value="2">
+            <input type="button" class="number" id="three" onclick="typeThree()" value="3">
             <input type="button" class="operation" id="plus" value="+">
-            <input type="button" id="zero" value="0">
+            <input type="button" id="zero" onclick="typeNum()" value="0">
             <input type="button" class="number" id="comma" value=",">
             <input type="button" class="operation" id="equal" value="=">
         </div>
