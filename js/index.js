@@ -9,7 +9,7 @@ function clearAll(){
 function typeZero(){
     let num = document.getElementById('zero').value
     strNums += num
-    document.getElementById('result').innerHTML = arrayNums
+    document.getElementById('result').innerHTML = strNums
 }
 
 function typeOne(){
@@ -59,53 +59,44 @@ function typeNine(){
     document.getElementById('result').innerHTML = strNums
 }
 function typePlus(){
-    var operation = '+'
+    let operation = '+'
     arrayNums.push(strNums, operation)
     document.getElementById('result').innerHTML = '0'
     strNums = ''
 }
 function typeMinus(){
-    var operation = '-'
+    let operation = '-'
     arrayNums.push(strNums, operation)
     document.getElementById('result').innerHTML = '0'
     strNums = ''
 }
 function typeMultiply(){
-    var operation = "*"
+    let operation = "*"
     arrayNums.push(strNums, operation)
     document.getElementById('result').innerHTML = '0'
     strNums = ''
 }
 function typeDivide(){
-    var operation = "/"
+    let operation = "/"
     arrayNums.push(strNums, operation)
     document.getElementById('result').innerHTML = '0'
     strNums = ''
 }
-function typeComma(){
-    let num = document.getElementById('comma').value
+function typeDot(){
+    let num = "."
     strNums += num
     document.getElementById('result').innerHTML = strNums
 }
 function equal(){
-    let resultPlusAndMinus = 0
-    let resultMultAndDiv = 0
-    let result = 0
     arrayNums.push(strNums)
+    let resultString = ''
 
     for (let i = 0; i < arrayNums.length; i++){
-        if(arrayNums[i] == "*"){
-            let arg1 = parseInt(arrayNums[i-1])
-            let arg2 = parseInt(arrayNums[i+1])
-            resultMultAndDiv = arg1 * arg2
-        }
-        else if(arrayNums[i] == "+"){
-            let arg3 = parseInt(arrayNums[i-1])
-            resultPlusAndMinus = arg3
-        }
+        resultString += arrayNums[i]
     }
-    result = resultPlusAndMinus + resultMultAndDiv
-    document.getElementById('result').innerHTML = result
-
-    console.log(arrayNums)
+    
+    console.log("Array of all inputs: " + arrayNums)
+    console.log("String: " + resultString)
+    console.log("RESULT = " + eval(resultString));
+    document.getElementById('result').innerHTML = eval(resultString)
 }
