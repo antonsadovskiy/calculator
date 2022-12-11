@@ -1,3 +1,4 @@
+// variables to store input values
 let strNums = ''
 let arrayNums = []
 
@@ -94,9 +95,17 @@ function equal(){
     for (let i = 0; i < arrayNums.length; i++){
         resultString += arrayNums[i]
     }
+    let result = eval(resultString)
+
+    if (Number.isInteger(result)){
+        document.getElementById('result').innerHTML = result
+    }
+    else {
+        document.getElementById('result').innerHTML = result.toFixed(6)
+    }
     
+    // tests to output 
     console.log("Array of all inputs: " + arrayNums)
     console.log("String: " + resultString)
-    console.log("RESULT = " + eval(resultString));
-    document.getElementById('result').innerHTML = eval(resultString)
+    console.log("RESULT = " + result)
 }
