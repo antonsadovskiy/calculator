@@ -17,14 +17,14 @@
 .output {
     display: flex;
     align-items: flex-end;
-    margin-top: 10px;
-    width: 375px;
-    height: 190px;
+    margin-top: 15px;
+    width: 370px;
+    height: 185px;
     background-color: rgb(36, 32, 32);
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
 }
 .buttons-wrapper {
     display: flex;
@@ -68,7 +68,7 @@
     background-color:rgb(36, 32, 32);
     transition: all 0.3s ease;
 }
-button {
+input {
     border-radius: 50%;
     width: 87px;
     height: 87px;
