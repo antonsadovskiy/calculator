@@ -101,7 +101,7 @@ function equal(){
         document.getElementById('result').innerHTML = result
     }
     else {
-        document.getElementById('result').innerHTML = result.toFixed(6)
+        document.getElementById('result').innerHTML = result.toFixed(3)
     }
     
     // tests to output 
