@@ -85,7 +85,13 @@ function typeDivide(){
 }
 function typeDot(){
     let num = "."
-    strNums += num
+    if (strNums === ''){
+        strNums += "0" + num
+    }
+    else{
+        strNums += num
+    }
+    
     document.getElementById('result').innerHTML = strNums
 }
 function equal(){
@@ -95,9 +101,14 @@ function equal(){
     for (let i = 0; i < arrayNums.length; i++){
         resultString += arrayNums[i]
     }
+    
     let result = eval(resultString)
 
-    if (Number.isInteger(result)){
+    if (result === "Infinity"){
+        result = "Division by zero!"
+        document.getElementById('result').innerHTML = result
+    }
+    else if (Number.isInteger(result)){
         document.getElementById('result').innerHTML = result
     }
     else {
